@@ -1,11 +1,15 @@
 import React from 'react'
-import Button from "@material-tailwind/react/Button";
+import { NavBar } from './components/navbar/NavBar'
+import { Table } from './components/tables/Table'
 
 export const App = () => {
   return (
-    <div>
-      <h1>hola mundo</h1>
-      <Button color="lightBlue" ripple="light">Button</Button>
-    </div>
+    <> 
+      <NavBar/>
+
+      <div className="container mx-auto">
+        <Table/>
+      </div>
+    </>
   )
 }

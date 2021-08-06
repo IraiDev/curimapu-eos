@@ -4,10 +4,13 @@ export const UiContext = React.createContext();
 
 export const UiController = ({children}) => {
   const [showModal, setShowModal] = useState(false);
+  const [showModalDetails, setShowModalDetails] = useState(false);
 
   const UiValues = {
     showModal,
-    setShowModal
+    setShowModal,
+    showModalDetails,
+    setShowModalDetails
   }
   
   return (
